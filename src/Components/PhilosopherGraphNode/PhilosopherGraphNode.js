@@ -5,6 +5,9 @@ class PhilosopherGraphNode extends React.Component {
   constructor(props) {
       super(props)
       this.philosopherName = this.philosopherName.bind(this)
+      this.state = {
+        expanded: false,
+      };
   }
   render() {
     return template.call(this);
